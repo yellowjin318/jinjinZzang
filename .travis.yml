@@ -1,15 +1,17 @@
 language: java
 before_install:
- - chmod +x gradlew
+- chmod +x gradlew
 jdk:
- - oraclejdk8
+- oraclejdk8
 branches:
   only:
-   - master
+  - master
 cache:
   directories:
-   - "$HOME/.gradle"
+  - "$HOME/.gradle"
 script:
- - "./gradlew clean build"
+- "./gradlew clean build"
 notifications:
- slack: cozyan:RJNQYM12vhZGjcfGaOBo6qo6
+  slack:
+    rooms:
+      secure: LaxYcn5dEwLgVUXt0GwuKBYFu0GdXfgIorpcKagXeB1aayYePHcY7oRXDVBKQbVnCun/G9cdVLOccVVWL6Zec/K7Bdwa0jnLgEPzpRUrGP3g9i3u7UTtmfjymLP0pLOY6gFfSNLSVELNO104wwUvbycuuE0x9yIKcXkSbFzJ4vPMqr5y1DrYQxgMGcPlt5+lLGCtZjYHbX5RyBjaiA53d3HEGCD6CkqRPIituVmqn3FkPXqJqONErLWtE/lvONSj6p2scl6sZIEetLNOxaJZwwdhhWfp00u1t+7ns1ZdNgwBrEIksNtIpq5yVixW0Hm+j7xv/+J/M8f+tu/P48JPv3j9Ho5viKFbHJJOEJNPj72a+Z/0wA+UvS/gkvdvOHY80oU8CIHZPMrpL5vIHZN2qgVPZ0UNsxa9iHLaZewXVuoiyj6VWGIL+7bGsFXApxg7VgzZxNg/uo3qnpMR1hAvfjP8UTNxYXEK0vMOodNmQYPvjry9y8+oUbkNJJ7CSIxvWiVKW2UFPUMAYJeHKfC33CLLIracvhgjMT6badHlvg3AHXAMUPHFvAdyx7RBkmiVkY9VHxsq5K2NqG/HaeafYAI4ssLs8+JvF19ZRQrzzcoGZvJP3DxaXIW4NZRE3Xt94qTfnSsmMFAlh4QHHACb+iNPf/OlgBlPRpIByALZiYk=
